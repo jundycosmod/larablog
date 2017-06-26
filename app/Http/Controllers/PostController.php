@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Post;
 use App\Comment;
+use App\Repositories\Posts;
 use Illuminate\Http\Request;
 
 
@@ -13,11 +14,12 @@ class PostController extends Controller {
         $this->middleware('auth')->except(['index', 'show']);
     }
 
-    public function index() {
+    public function index(Post $posts) {
 
-        $posts = Post::latest()
-                ->filter(request(['month', 'year']))
-                ->get();
+//        $posts = Post::latest()
+//                ->filter(request(['month', 'year']))
+//                ->get();
+        $posts = $posts->all();
         
         
         $archives = Post::archives();
