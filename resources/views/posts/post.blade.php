@@ -9,4 +9,5 @@
         <!--<a href="#">Mark</a></p>-->
 
     <p>{{ $post->body }}</p>
+
 </div><!-- /.blog-post -->
