@@ -10,4 +10,10 @@ class Comment extends Model
         $this->belongsTo(Post::class);
         
     }
+    
+    public function user() {
+        
+        $this->belongsTo(User::class);
+        
+    }
 }
