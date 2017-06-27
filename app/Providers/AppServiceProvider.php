@@ -5,18 +5,19 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
 
-class AppServiceProvider extends ServiceProvider
-{
+use App\Billing\Stripe;
+
+class AppServiceProvider extends ServiceProvider {
+
     /**
      * Bootstrap any application services.
      *
      * @return void
      */
-    public function boot()
-    {
+    public function boot() {
         Schema::defaultStringLength(191);
-        
-        view()->composer('layouts.sidebar', function($view){
+
+        view()->composer('layouts.sidebar', function($view) {
             $view->with('archives', \App\Post::archives());
         });
     }
@@ -26,8 +27,13 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
-    {
-        //
+    public function register() {
+
+
+        $this->app->singleton(Stripe::class, function() {
+            return new Stripe(config('services.stripe.secret'));
+        });
+
     }
+
 }
