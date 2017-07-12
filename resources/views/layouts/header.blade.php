@@ -1,6 +1,10 @@
-<div class="blog-header">
+<!-- Header -->
+<header class="masthead">
     <div class="container">
-        <h1 class="blog-title">The Bootstrap Blog</h1>
-        <p class="lead blog-description">An example blog template built with Bootstrap.</p>
+        <div class="intro-text">
+            <div class="intro-lead-in">Welcome To Our Studio!</div>
+            <div class="intro-heading">It's Nice To Meet You</div>
+            <a href="#services" class="btn btn-xl">Tell Me More</a>
+        </div>
     </div>
-</div>
+</header>

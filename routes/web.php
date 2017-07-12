@@ -10,6 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+$theme = Config::get('site.theme');
+//die($theme);
+View::addLocation(base_path() . '/themes/' . $theme . '/views/');
 
 $stripe = resolve('App\Billing\Stripe');
         
