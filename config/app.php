@@ -162,13 +162,15 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        Igaster\LaravelTheme\themeServiceProvider::class,
-        //Shipu\Themevel\Providers\ThemevelServiceProvider::class,
+//        Igaster\LaravelTheme\themeServiceProvider::class,
+//        Shipu\Themevel\Providers\ThemevelServiceProvider::class,
+//        'Lavary\Menu\ServiceProvider',
 
         /*
          * Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
+        TCG\Voyager\VoyagerServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -227,8 +229,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'Theme' => Igaster\LaravelTheme\Facades\Theme::class,
-        //'Theme' => Shipu\Themevel\Facades\Theme::class,
+        //'Theme' => Igaster\LaravelTheme\Facades\Theme::class,
+//        'Theme' => Shipu\Themevel\Facades\Theme::class,
+//        'Menu'       => 'Lavary\Menu\Facade',
 
     ],
 
