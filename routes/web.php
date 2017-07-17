@@ -43,7 +43,8 @@ Route::get('/logout', 'SessionsController@destroy');
 
 Route::get('/services/create', 'ServiceController@create');
 
-
+Route::get('contact-us', 'ContactUSController@contactUS');
+Route::post('contact-us', ['as'=>'contactus.store','uses'=>'ContactUSController@contactUSPost']);
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

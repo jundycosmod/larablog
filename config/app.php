@@ -162,6 +162,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        'Collective\Html\HtmlServiceProvider',
 //        Igaster\LaravelTheme\themeServiceProvider::class,
 //        Shipu\Themevel\Providers\ThemevelServiceProvider::class,
 //        'Lavary\Menu\ServiceProvider',
@@ -232,6 +233,7 @@ return [
         //'Theme' => Igaster\LaravelTheme\Facades\Theme::class,
 //        'Theme' => Shipu\Themevel\Facades\Theme::class,
 //        'Menu'       => 'Lavary\Menu\Facade',
+        'Form' => 'Collective\Html\FormFacade',
 
     ],
 
