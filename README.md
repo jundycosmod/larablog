@@ -29,4 +29,6 @@ php artisan serve
 7. Login using:
  * Username: *admin@admin.com*
  * Password: *password*
+ 
+ # ENJOY!
 
