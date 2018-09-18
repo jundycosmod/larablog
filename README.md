@@ -22,6 +22,7 @@ php artisan key:generate
 php artisan config:clear
 php artisan migrate
 php artisan voyager:install --with-dummy
+php artisan vendor:publish --force --provider=TCG/Voyager/VoyagerServiceProvider
 php artisan serve
 ```
 6. Go to http://localhost:8000
