@@ -10,7 +10,7 @@
         "laravel/tinker": "~1.0",
         "laravelcollective/html": "^5.4",
         "lavary/laravel-menu": "^1.6",
-        "tcg/voyager": "^0.11.14"
+        "tcg/voyager": "*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
